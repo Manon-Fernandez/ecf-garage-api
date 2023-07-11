@@ -29,6 +29,17 @@ public class AvisWs {
         return avisService.getAllAvisByStatus(status);
     }
 
+    @PostMapping
+    public void createAvis(@RequestBody Avis unAvis){
+        this.avisService.createAvis(unAvis);
+    }
+
+    @PutMapping("/status/{status}")
+    public void updateStatusAvis(@RequestBody Avis unAvis,
+                                 @PathVariable(name="status") Status status){
+        this.avisService.updateStatusAvis(unAvis,status);
+    }
+
 }
 
 

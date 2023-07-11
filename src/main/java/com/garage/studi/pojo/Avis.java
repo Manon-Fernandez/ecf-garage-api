@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class Avis {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "avis_id")
     private Long id;
 
