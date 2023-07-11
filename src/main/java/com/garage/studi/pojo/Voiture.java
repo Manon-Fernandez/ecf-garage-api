@@ -27,5 +27,5 @@ public class Voiture {
 
     private String description;
 
-
+    private String denomination;
 }
