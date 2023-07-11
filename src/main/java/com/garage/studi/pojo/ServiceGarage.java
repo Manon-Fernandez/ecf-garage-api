@@ -8,12 +8,12 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-@Table(name = "service")
 public class ServiceGarage {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long service_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="service_id")
+    private Long id;
 
     private String nom;
 

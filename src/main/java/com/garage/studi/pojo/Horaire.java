@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Horaire {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_horaire")
     private Long id;
 
