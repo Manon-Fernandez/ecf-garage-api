@@ -1,5 +1,6 @@
 package com.garage.studi.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,6 +20,11 @@ public class Option {
     private String nom;
 
     private String description;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
+    @JoinColumn(name = "voiture_voiture_id")
+    private Voiture voiture;
 
 
 }
