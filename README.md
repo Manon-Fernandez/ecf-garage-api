@@ -9,12 +9,17 @@ Il vous faudra sur votre poste :
 - [Maven](https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.zip)
 - [Java 17](https://www.graalvm.org/downloads/#)
 
+ou 
+
+- [Docker](https://www.docker.com/products/docker-desktop)
+
 N'oubliez pas egalement un IDE, vous aidant de manière considérable.
 - [Visual Studio code](https://code.visualstudio.com/)
 - [IntelliJ](https://www.jetbrains.com/fr-fr/pycharm/download/)
 
 ## Utilisation
 
+### Sans Docker
 Afin de pouvoir lancer le projet, vous devez lancer à la racine :
 ```bash
 mvn install 
@@ -27,6 +32,12 @@ L'application va demarrer et un jeu de données est automatiquement mis en base.
 Chaque requête que vous effectuerez, devra être après un '/api', par exemple : http://localhost:8081/api/voiture.
 
 PS : le back-end utilise une base de données en ligne, pas besoin de modifier la configuration.
+
+### Avec Docker
+Afin de pouvoir lancer le projet, vous devez lancer à la racine :
+```bash
+docker-compose up -d
+ ```
 
 ## Identifiant
 
